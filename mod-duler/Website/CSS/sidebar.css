@@ -1,0 +1,65 @@
+    .active{
+        background-color: #916bbf;
+    }
+
+    .main{
+        height: 100%;
+        position: relative;
+        margin: 0 auto;
+    }
+
+    .top{
+        top: 0px;
+        position: fixed;
+        width: 100%;
+        z-index: 9999;
+        display: block;
+        background-color: #1c0c5b;
+    }
+
+    .sidebar{
+        height: 100%;
+        float: left;
+        position: fixed;
+        display: block;
+        left: 0;
+        width: 130px;
+        border: none;
+        text-align: left;
+        overflow-x: auto;
+    }
+
+    .sidebar a{
+        color: #916bbf;
+    }
+
+    .sidebar .active{
+        color: white;
+    }
+
+    .content{
+        margin-left: 140px;
+    }
+
+    @media (min-width:992px){
+        .main{
+            max-height: calc(100% - 62px);
+            top: 62px;
+        }
+
+        .list{
+            margin-top: 72px;
+        }
+
+    }
+    @media (min-width:0px) and (max-width:992px){
+        .main{
+            max-height: calc(100% - 94px);
+            top: 94px;
+        }
+
+        .list{
+            margin-top: 104px;
+        }
+
+    }
